@@ -11,25 +11,25 @@
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; }
         body { background-color: #fafafa; color: #262626; line-height: 1.6; }
         
-        /* HEADER PREMIUM REFORMULADO (COM ESPAÇAMENTO CORRIGIDO) */
-        header { background-color: #0d131e; color: #ffffff; padding: 90px 20px 80px 20px; text-align: center; border-bottom: 3px solid #d4af37; }
-        .profile-card { max-width: 600px; margin: 0 auto; }
+        /* HEADER PREMIUM REFORMULADO (COM ESPAÇAMENTO AJUSTADO) */
+        header { background-color: #0d131e; color: #ffffff; padding: 60px 20px 80px 20px; text-align: center; border-bottom: 3px solid #d4af37; }
+        .profile-card { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
         
-        /* FOTO DE PERFIL COM MARGEM ABAIXO CORRIGIDA */
-        .profile-img { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #d4af37; object-fit: cover; margin-bottom: 35px; background-color: #1a202c; display: inline-block; }
+        /* FOTO DE PERFIL TOTALMENTE ALINHADA COM A MOLDURA */
+        .profile-img { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #d4af37; object-fit: cover; margin: 0 auto 25px auto; background-color: #1a202c; display: block; }
         
         /* NOME E TAGLINE COM MAIS RESPIRO */
-        h1 { font-size: 2.6rem; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 12px; }
-        .tagline { color: #d4af37; font-size: 1.1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 25px; }
-        .bio-text { color: #a0aec0; font-size: 0.95rem; max-width: 500px; margin: 0 auto 25px auto; font-weight: 300; }
+        h1 { font-size: 2.6rem; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 12px; color: #ffffff; width: 100%; }
+        .tagline { color: #d4af37; font-size: 1.1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 25px; width: 100%; }
+        .bio-text { color: #a0aec0; font-size: 0.95rem; max-width: 500px; margin: 0 auto 30px auto; font-weight: 300; }
         
         /* ABAS DE REDES SOCIAIS */
         .social-channels { display: flex; justify-content: center; gap: 20px; margin-bottom: 35px; }
         .social-link { color: #a0aec0; font-size: 1.6rem; transition: color 0.3s; text-decoration: none; }
         .social-link:hover { color: #d4af37; }
         
-        /* BOTÃO WHATSAPP */
-        .btn-action { display: inline-block; background-color: #d4af37; color: #0d131e; text-decoration: none; font-weight: bold; padding: 14px 40px; border-radius: 4px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease; margin-top: 10px; }
+        /* BOTÃO WHATSAPP COM MARGEM SUPERIOR CORRIGIDA */
+        .btn-action { display: inline-block; background-color: #d4af37; color: #0d131e; text-decoration: none; font-weight: bold; padding: 14px 40px; border-radius: 4px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease; margin-top: 15px; }
         .btn-action:hover { background-color: #bfa030; transform: translateY(-1px); }
         .btn-action i { margin-right: 8px; }
 
@@ -80,6 +80,7 @@
     <!-- HERO / APRESENTAÇÃO -->
     <header>
         <div class="profile-card">
+            <!-- Imagem forçada a se comportar como bloco centralizado -->
             <img src="https://weserv.nl" alt="Breno Rodrigues" class="profile-img">
             <h1>Breno Rodrigues</h1>
             <p class="tagline">Guia de Turismo &amp; Operador</p>
@@ -91,7 +92,7 @@
                 <a href="https://wa.me" target="_blank" class="social-link" title="WhatsApp Business"><i class="fab fa-whatsapp"></i></a>
             </div>
 
-            <!-- Botão de Ação -->
+            <!-- Botão de Ação com margem superior corrigida -->
             <a href="https://wa.me?text=Ol%C3%A1%20Breno%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20roteiro!" target="_blank" class="btn-action">
                 <i class="fab fa-whatsapp"></i> Solicitar Orçamento
             </a>
@@ -102,9 +103,9 @@
     <main class="section-container">
         <div class="cadastur-block">
             <div class="cadastur-text">
-                <span class="section-label">Security Legal</span>
+                <span class="section-label">Segurança Legal</span>
                 <h2 class="section-title">Credenciamento Oficial</h2>
-                <p class="text-p">Roteiros operados em estrita conformidade com as diretrizes do Ministério do Turismo, assegurando suporte técnico completo e condução qualificada.</p>
+                <p class="text-p">Roteiros operados in estrita conformidade com as diretrizes do Ministério do Turismo, assegurando suporte técnico completo e condução qualificada.</p>
                 <div class="badge-box">
                     <p>REGISTRO CADASTUR</p>
                     <p>16.453720.29-8</p>
