@@ -1,1 +1,122 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breno Rodrigues | Guia de Turismo & Operador</title>
+    <style>
+        /* RESET & BASE */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        body { background-color: #fafafa; color: #262626; line-height: 1.6; }
+        
+        /* HEADER PREMIUM */
+        header { background-color: #0d131e; color: #ffffff; padding: 80px 20px; text-align: center; border-bottom: 3px solid #d4af37; }
+        .profile-card { max-width: 600px; margin: 0 auto; }
+        
+        /* AJUSTE SEGURO DA FOTO DE PERFIL */
+        .profile-img { width: 110px; height: 110px; border-radius: 50%; border: 3px solid #d4af37; object-fit: cover; margin-bottom: 20px; background-color: #1a202c; }
+        
+        h1 { font-size: 2.4rem; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 8px; }
+        .tagline { color: #d4af37; font-size: 1.1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; }
+        .bio-text { color: #a0aec0; font-size: 0.95rem; max-width: 500px; margin: 0 auto 30px auto; font-weight: 300; }
+        
+        /* BOTÃO WHATSAPP */
+        .btn-action { display: inline-block; background-color: #d4af37; color: #0d131e; text-decoration: none; font-weight: bold; padding: 14px 36px; border-radius: 4px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease; }
+        .btn-action:hover { background-color: #bfa030; transform: translateY(-1px); }
+
+        /* SEÇÃO CENTRALIZADA (PC & MOBILE) */
+        .section-container { max-width: 1100px; margin: 60px auto; padding: 0 20px; }
+        
+        /* GRID DE DUAS COLUNAS */
+        .cadastur-block { display: flex; flex-direction: column; gap: 40px; align-items: center; background-color: #ffffff; padding: 40px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.02); }
+        @media (min-width: 768px) {
+            .cadastur-block { flex-direction: row; }
+            .cadastur-text { flex: 1; padding-right: 20px; }
+            .cadastur-media { flex: 1; display: flex; justify-content: center; }
+        }
+
+        .section-label { color: #bfa030; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1.5px; display: block; margin-bottom: 10px; }
+        .section-title { font-size: 1.8rem; font-weight: 600; color: #0d131e; margin-bottom: 20px; }
+        .text-p { color: #4a5568; font-size: 0.95rem; margin-bottom: 20px; }
+        
+        .badge-box { background-color: #f7fafc; padding: 15px 20px; border-radius: 6px; border-left: 4px solid #d4af37; margin-bottom: 20px; }
+        .badge-box p:first-child { font-size: 0.75rem; color: #718096; font-weight: 600; letter-spacing: 0.5px; }
+        .badge-box p:last-child { font-size: 1.2rem; font-weight: 700; color: #0d131e; margin-top: 2px; }
+
+        /* TRAVA RÍGIDA DA IMAGEM DO CADASTUR PARA PC */
+        .frame-photo { background: #f7fafc; padding: 12px; border-radius: 6px; border: 1px solid #edf2f7; max-width: 100%; width: 440px; box-shadow: 0 8px 24px rgba(0,0,0,0.04); }
+        .img-fixed { width: 100%; height: auto; max-height: 300px; object-fit: contain; display: block; border-radius: 4px; }
+
+        /* GALERIA DE IMAGENS */
+        .gallery-wrapper { background-color: #f7fafc; padding: 60px 20px; border-top: 1px solid #edf2f7; }
+        .gallery-header { max-width: 1100px; margin: 0 auto 30px auto; padding: 0 20px; }
+        .gallery-grid { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 1fr; gap: 20px; }
+        @media (min-width: 480px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 768px) { .gallery-grid { grid-template-columns: repeat(3, 1fr); } }
+        
+        .gallery-card { background-color: #ffffff; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; padding: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .gallery-card img { width: 100%; height: 260px; object-fit: cover; border-radius: 4px; display: block; transition: transform 0.4s ease; }
+        .gallery-card img:hover { transform: scale(1.02); }
+
+        /* FOOTER */
+        footer { background-color: #0d131e; color: #718096; text-align: center; padding: 40px 20px; font-size: 0.8rem; border-top: 1px solid #1a202c; }
+        footer p:first-child { color: #a0aec0; margin-bottom: 6px; }
+    </style>
+</head>
+<body>
+
+    <!-- HERO / APRESENTAÇÃO -->
+    <header>
+        <div class="profile-card">
+            <!-- COLOQUEI A URL DIRETA DE AVATAR DO INSTAGRAM PARA GARANTIR QUE APARAÇA -->
+            <img src="https://weserv.nl" alt="Breno Rodrigues" class="profile-img">
+            <h1>Breno Rodrigues</h1>
+            <p class="tagline">Guia de Turismo &amp; Operador</p>
+            <p class="bio-text">Mestre em Turismo pela UFPR. Desenvolvimento de itinerários técnicos e guiamento personalizado de experiências integradas em Curitiba e Região.</p>
+            <a href="https://wa.me" target="_blank" class="btn-action">Solicitar Roteiro</a>
+        </div>
+    </header>
+
+    <!-- BLOCO REGULARIZADO (CADASTUR) -->
+    <main class="section-container">
+        <div class="cadastur-block">
+            <div class="cadastur-text">
+                <span class="section-label">Segurança Legal</span>
+                <h2 class="section-title">Credenciamento Oficial</h2>
+                <p class="text-p">Roteiros operados em estrita conformidade com as diretrizes do Ministério do Turismo, assegurando suporte técnico completo e condução qualificada.</p>
+                <div class="badge-box">
+                    <p>REGISTRO CADASTUR</p>
+                    <p>16.453720.29-8</p>
+                </div>
+                <p class="text-p" style="font-size: 0.85rem; color: #718096;">Solidez acadêmica aliada à prática de campo para entregar a melhor experiência de hospitalidade.</p>
+            </div>
+            <div class="cadastur-media">
+                <div class="frame-photo">
+                    <img src="certificado-cadastur.jpg" alt="Certificado Cadastur" class="img-fixed">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- PORTFÓLIO VISUAL -->
+    <section class="gallery-wrapper">
+        <div class="gallery-header">
+            <span class="section-label">Registros</span>
+            <h2 class="section-title" style="margin-bottom: 0;">Operações e Visitas</h2>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-card"><img src="foto-roteiro1.jpg" alt="Roteiro em Campo"></div>
+            <div class="gallery-card"><img src="foto-roteiro2.jpg" alt="Pesquisa de Campo"></div>
+            <div class="gallery-card"><img src="foto-roteiro3.jpg" alt="Atividade de Turismo"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Brenodoz Turismo. Todos os direitos reservados.</p>
+        <p>Razão Social: 69.100.462 BRENO DOS SANTOS RODRIGUES | CNPJ: 69.100.462/0001-87</p>
+    </footer>
+
+</body>
+</html>
